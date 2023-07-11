@@ -20,3 +20,8 @@ move_ids = models.execute_kw(db, uid, password, 'account.move', 'search_read', [
 for move in move_ids:
     print(move)
 
+
+# employee_ids = models.execute_kw(db, uid, password, 'hr.employee', 'search_read', [[]], {'fields': ['id', 'name']})
+# for employee_id in employee_ids:
+#     #employee = models.execute_kw(db, uid, password, 'hr.employee', 'read', [employee_id], {'fields': ['id', 'name']})
+#     print(employee_id)

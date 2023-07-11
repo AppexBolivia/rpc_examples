@@ -30,7 +30,7 @@ move_ids = cur.fetchall()
 for move in move_ids:
     print({
         'name': move[0],
-        'date': move[1],
+        'date': move[1].strftime('%Y-%m-%d'),
         'ref': move[2] or False,
         'journal_id': move[3],
         'line_ids': move[4]
